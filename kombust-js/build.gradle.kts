@@ -7,4 +7,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.3.5")
 }
 
-kotlin.target.produceKotlinLibrary()
+kotlin.target {
+    produceKotlinLibrary()
+    browser()
+}
